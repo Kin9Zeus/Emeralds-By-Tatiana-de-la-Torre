@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Emeralds by Tatiana De La Torre | Premium Colombian Emeralds",
   description:
-    "Discover exceptional Colombian emeralds personally selected from the legendary Muzo region by Tatiana De La Torre. Authentically Colombian. Personally Selected. Exceptionally Beautiful.",
+    "Discover exceptional Colombian emeralds, personally selected from the legendary Muzo region by Tatiana De La Torre. Authentically Colombian. Personally Selected. Exceptionally Beautiful.",
   keywords: [
     "Colombian emeralds",
     "Muzo emeralds",
