@@ -2,26 +2,195 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ========================================
+   EMERALDS BY TATIANA DE LA TORRE
+   Luxury Design System
+   ======================================== */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: auto; /* Lenis handles smooth scrolling */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-montserrat), sans-serif;
+    color: #F5F0E8;
+    background-color: #0D0D0D;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    padding-env: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  /* Prevent images from breaking layout */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Prevent long words from overflowing */
+  p, h1, h2, h3, h4, h5, h6, li, span, a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  ::selection {
+    background-color: rgba(212, 175, 55, 0.3);
+    color: #F5F0E8;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #062117;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #D4AF37 0%, #B8960C 100%);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E8D48B;
+  }
+
+  /* Headings default to Cinzel */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-cinzel), serif;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Gold text gradient */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #E8D48B 50%, #D4AF37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gold shimmer text */
+  .text-gold-shimmer {
+    background: linear-gradient(
+      90deg,
+      #D4AF37 0%,
+      #E8D48B 25%,
+      #D4AF37 50%,
+      #E8D48B 75%,
+      #D4AF37 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  /* Glassmorphism card */
+  .glass-card {
+    background: rgba(10, 59, 36, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card:hover {
+    background: rgba(10, 59, 36, 0.25);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.1),
+                0 0 60px rgba(10, 59, 36, 0.2);
+  }
+
+  /* Gold divider line */
+  .gold-line {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(212, 175, 55, 0.1) 15%,
+      #D4AF37 50%,
+      rgba(212, 175, 55, 0.1) 85%,
+      transparent 100%
+    );
+  }
+
+  /* Section padding */
+  .section-padding {
+    @apply px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:px-20 lg:py-32 xl:px-28 xl:py-40;
+  }
+
+  /* Luxury button */
+  .btn-luxury {
+    @apply relative inline-flex items-center justify-center px-8 py-3 
+           font-montserrat text-sm tracking-luxury uppercase
+           border border-gold/40 text-gold
+           transition-all duration-500 ease-out
+           overflow-hidden;
+  }
+
+  .btn-luxury::before {
+    content: '';
+    @apply absolute inset-0 bg-gold/0 transition-all duration-500;
+  }
+
+  .btn-luxury:hover {
+    @apply border-gold text-obsidian;
+  }
+
+  .btn-luxury:hover::before {
+    @apply bg-gold;
+  }
+
+  .btn-luxury span {
+    @apply relative z-10;
+  }
+
+  /* Image reveal mask */
+  .reveal-mask {
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .reveal-mask.revealed {
+    clip-path: inset(0 0 0 0);
+  }
+
+  /* Parallax container */
+  .parallax-container {
+    @apply relative overflow-hidden;
+  }
+
+  .parallax-container img {
+    @apply w-full h-[120%] object-cover;
+    will-change: transform;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* GPU acceleration hint */
+  .gpu {
+    transform: translateZ(0);
+    will-change: transform;
   }
 }
