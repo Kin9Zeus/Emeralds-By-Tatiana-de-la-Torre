@@ -174,10 +174,10 @@ export default function Footer() {
             <div className="mt-5 flex flex-col gap-3">
               {/* Email */}
               <a
-                href="mailto:info@emeraldsbytatiana.com"
+                href="mailto:delatorre@emeraldsbytatiana.com"
                 className="font-montserrat text-sm text-pearl/60 transition-colors duration-300 hover:text-gold"
               >
-                info@emeraldsbytatiana.com
+                delatorre@emeraldsbytatiana.com
               </a>
               {/* Phone */}
               <a
