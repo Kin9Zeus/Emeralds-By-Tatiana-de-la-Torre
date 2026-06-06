@@ -74,7 +74,7 @@ export default function Hero() {
         <video
           className="h-full w-full object-cover"
           src="/assets/media/hero-bg.mp4.mp4"
-          poster="/assets/media/Raw emeralds with lighting on a dark background and logo of the brand.png"
+          poster="/assets/media/Raw emeralds with lighting on a dark background and logo of the brand.webp"
           autoPlay
           muted
           loop

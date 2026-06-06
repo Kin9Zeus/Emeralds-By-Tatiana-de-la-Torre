@@ -30,7 +30,7 @@ const grades: GradeCard[] = [
       'Highly collectible',
       'Premium investment quality',
     ],
-    image: '/assets/media/9.16 aspect ratio emerald on white bakcground.png',
+    image: '/assets/media/9.16 aspect ratio emerald on white bakcground.webp',
     imageAlt: 'F1 minor enhancement emerald with high transparency',
     isPremium: true,
   },
@@ -43,7 +43,7 @@ const grades: GradeCard[] = [
       'Visible natural inclusions',
       'Strong value and affordability',
     ],
-    image: '/assets/media/3.4 aspect ratio with logo emerald on a black cloth.png',
+    image: '/assets/media/3.4 aspect ratio with logo emerald on a black cloth.webp',
     imageAlt: 'F2 moderate enhancement emerald on black cloth',
   },
   {
@@ -54,7 +54,7 @@ const grades: GradeCard[] = [
       'More visible internal characteristics',
       'Ideal for larger stones at accessible prices',
     ],
-    image: '/assets/media/3.4 aspect ratio with logo emerald on a black surface.png',
+    image: '/assets/media/3.4 aspect ratio with logo emerald on a black surface.webp',
     imageAlt: 'F3 significant enhancement emerald on black surface',
   },
 ];

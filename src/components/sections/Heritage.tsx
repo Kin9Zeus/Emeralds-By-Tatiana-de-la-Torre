@@ -262,7 +262,7 @@ export default function Heritage() {
                 className="parallax-container relative rounded-sm overflow-hidden aspect-[3/4] lg:aspect-[4/5]"
               >
                 <Image
-                  src="/assets/media/Raw emerald illuminated on rocks.png"
+                  src="/assets/media/Raw emerald illuminated on rocks.webp"
                   alt="Raw Colombian emerald illuminated on natural rocks"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -317,7 +317,7 @@ export default function Heritage() {
                 className="parallax-container relative rounded-sm overflow-hidden aspect-[3/4]"
               >
                 <Image
-                  src="/assets/media/Meet_Tatiana_De_La_Torre_1.jpg"
+                  src="/assets/media/Meet_Tatiana_De_La_Torre_1.webp"
                   alt="Tatiana De La Torre"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -334,7 +334,7 @@ export default function Heritage() {
                 className="parallax-container relative rounded-sm overflow-hidden aspect-[4/3] hidden lg:block"
               >
                 <Image
-                  src="/assets/media/Raw emerald on rocks.png"
+                  src="/assets/media/Raw emerald on rocks.webp"
                   alt="Raw emerald resting on natural rocks"
                   fill
                   sizes="40vw"
@@ -422,7 +422,7 @@ export default function Heritage() {
               {/* Secondary image (mobile only) */}
               <div className="mt-10 relative rounded-sm overflow-hidden aspect-[4/3] lg:hidden">
                 <Image
-                  src="/assets/media/Raw emerald on rocks.png"
+                  src="/assets/media/Raw emerald on rocks.webp"
                   alt="Raw emerald resting on natural rocks"
                   fill
                   sizes="100vw"

@@ -143,7 +143,7 @@ export default function Commitment() {
       <div className="absolute inset-0 h-[120%] -top-[10%]">
         <Image
           ref={imageRef}
-          src="/assets/media/21.9 aspect ratio 90 degrees aereal view small emeralds on black cloth.png"
+          src="/assets/media/21.9 aspect ratio 90 degrees aereal view small emeralds on black cloth.webp"
           alt="Aerial view of small emeralds on black cloth"
           fill
           className="object-cover object-center"

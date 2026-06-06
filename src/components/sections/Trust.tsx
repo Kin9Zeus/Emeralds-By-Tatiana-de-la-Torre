@@ -19,19 +19,19 @@ const trustPoints = [
 
 const lifestyleImages = [
   {
-    src: '/assets/media/Golden hour emerald ring on natural hand.png',
+    src: '/assets/media/Golden hour emerald ring on natural hand.webp',
     alt: 'Golden hour emerald ring on hand',
   },
   {
-    src: '/assets/media/Golden hour emerald ring on natural hand 2.png',
+    src: '/assets/media/Golden hour emerald ring on natural hand 2.webp',
     alt: 'Golden hour emerald ring close-up',
   },
   {
-    src: '/assets/media/Golden hour emerald ring on natural hand 3.png',
+    src: '/assets/media/Golden hour emerald ring on natural hand 3.webp',
     alt: 'Emerald ring in golden light',
   },
   {
-    src: '/assets/media/Golden hour emerald ring on natural hand 4.png',
+    src: '/assets/media/Golden hour emerald ring on natural hand 4.webp',
     alt: 'Emerald ring lifestyle shot',
   },
 ];
@@ -258,7 +258,7 @@ export default function Trust() {
           {/* Image */}
           <div className="trust-image-wrapper relative aspect-[4/5] w-full max-w-md mx-auto lg:mx-0 overflow-hidden rounded-sm">
             <Image
-              src="/assets/media/Emerald showcased on a GIA certificate.png"
+              src="/assets/media/Emerald showcased on a GIA certificate.webp"
               alt="Emerald showcased on a GIA certificate"
               fill
               className="object-cover"
@@ -333,7 +333,7 @@ export default function Trust() {
           {/* Portrait Image */}
           <div className="message-portrait lg:col-span-2 relative aspect-[3/4] w-full max-w-sm mx-auto lg:mx-0 overflow-hidden rounded-sm">
             <Image
-              src="/assets/media/A_Message_from_Tatiana_De_La_Torre.jpg"
+              src="/assets/media/A_Message_from_Tatiana_De_La_Torre.webp"
               alt="Tatiana De La Torre"
               fill
               className="object-cover"

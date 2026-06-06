@@ -77,7 +77,7 @@ export default function Origin() {
       <div className="absolute inset-0 h-[130%] -top-[15%]">
         <Image
           ref={imageRef}
-          src="/assets/media/Raw emerald on rocks.png"
+          src="/assets/media/Raw emerald on rocks.webp"
           alt="Raw emerald nestled on natural rock formations"
           fill
           className="object-cover object-center"

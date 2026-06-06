@@ -120,7 +120,7 @@ export default function Promise() {
       <div className="absolute inset-0 h-[120%] -top-[10%]">
         <Image
           ref={bgImageRef}
-          src="/assets/media/16.9 aspect ratio 90 degrees aereal view small emeralds on black cloth.png"
+          src="/assets/media/16.9 aspect ratio 90 degrees aereal view small emeralds on black cloth.webp"
           alt="Aerial view of emeralds on black cloth"
           fill
           className="object-cover object-center"

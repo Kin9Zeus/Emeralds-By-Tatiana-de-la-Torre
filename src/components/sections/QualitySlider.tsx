@@ -20,7 +20,7 @@ const panels = [
       'Even color distribution',
     ],
     image:
-      '/assets/media/3.4 aspect ratio with logo small emeralds on a green cloth showcase surface.png',
+      '/assets/media/3.4 aspect ratio with logo small emeralds on a green cloth showcase surface.webp',
   },
   {
     number: '02',
@@ -28,7 +28,7 @@ const panels = [
     details: [
       'Almost all natural emeralds contain inclusions. Tatiana inspects each stone to ensure inclusions do not detract from its beauty.',
     ],
-    image: '/assets/media/Emerald on gray bakcground.png',
+    image: '/assets/media/Emerald on gray bakcground.webp',
   },
   {
     number: '03',
@@ -36,7 +36,7 @@ const panels = [
     details: [
       'Prioritizing emeralds with excellent transparency to reveal depth and brilliance.',
     ],
-    image: '/assets/media/Emerald on gray bakcground semi-side view.png',
+    image: '/assets/media/Emerald on gray bakcground semi-side view.webp',
   },
   {
     number: '04',
@@ -44,7 +44,7 @@ const panels = [
     details: [
       'Evaluated individually to maximize color, brilliance, transparency, and size retention.',
     ],
-    image: '/assets/media/3.4 aspect ratio with logo emerald.png',
+    image: '/assets/media/3.4 aspect ratio with logo emerald.webp',
   },
 ];
 
