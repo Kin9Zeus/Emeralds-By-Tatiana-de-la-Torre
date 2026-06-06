@@ -138,6 +138,7 @@ export default function Commitment() {
     <section
       ref={sectionRef}
       className="relative w-full overflow-hidden bg-emerald-dark"
+      aria-label="Commitment to Authenticity"
     >
       {/* Cinematic Parallax Background Image */}
       <div className="absolute inset-0 h-[120%] -top-[10%]">

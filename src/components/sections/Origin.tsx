@@ -72,6 +72,7 @@ export default function Origin() {
     <section
       ref={sectionRef}
       className="relative w-full overflow-hidden min-h-[60vh]"
+      aria-label="Emerald Origin and Provenance"
     >
       {/* Parallax Background Image */}
       <div className="absolute inset-0 h-[130%] -top-[15%]">

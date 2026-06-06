@@ -86,6 +86,7 @@ export default function OilTreatment() {
     <section
       ref={sectionRef}
       className="relative w-full overflow-hidden bg-emerald-dark"
+      aria-label="Emerald Oil Treatment"
     >
       {/* Content */}
       <div className="relative z-10 px-6 py-24 sm:px-10 md:px-16 lg:px-24 xl:px-32 2xl:px-40 md:py-32 lg:py-40 max-w-5xl mx-auto">

@@ -258,6 +258,7 @@ export default function EnhancementGrades() {
       ref={sectionRef}
       id="enhancement"
       className="relative w-full overflow-hidden bg-gradient-to-b from-obsidian to-emerald-dark"
+      aria-label="Emerald Enhancement Grades"
     >
       {/* Subtle radial glow behind cards */}
       <div className="absolute inset-0 pointer-events-none">

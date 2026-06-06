@@ -334,7 +334,7 @@ export default function Trust() {
           <div className="message-portrait lg:col-span-2 relative aspect-[3/4] w-full max-w-sm mx-auto lg:mx-0 overflow-hidden rounded-sm">
             <Image
               src="/assets/media/A_Message_from_Tatiana_De_La_Torre.webp"
-              alt="Tatiana De La Torre"
+              alt="Tatiana De La Torre, Colombian emerald expert and founder of Emeralds by Tatiana De La Torre"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 80vw, 35vw"

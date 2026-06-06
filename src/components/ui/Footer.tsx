@@ -171,7 +171,7 @@ export default function Footer() {
               Get In Touch
             </h4>
 
-            <div className="mt-5 flex flex-col gap-3">
+            <address className="not-italic mt-5 flex flex-col gap-3">
               {/* Email */}
               <a
                 href="mailto:delatorre@emeraldsbytatiana.com"
@@ -186,7 +186,7 @@ export default function Footer() {
               >
                 +1 (307) 251-7072
               </a>
-            </div>
+            </address>
 
             {/* Newsletter */}
             <form

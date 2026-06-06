@@ -187,9 +187,9 @@ export default function QualitySlider() {
       >
         {/* Intro */}
         <div className="mb-12 text-center">
-          <p className="font-montserrat text-xs tracking-luxury uppercase text-gold mb-4">
+          <h2 className="font-montserrat text-xs tracking-luxury uppercase text-gold mb-4">
             Understanding Emerald Quality
-          </p>
+          </h2>
           <p className="font-montserrat text-sm leading-relaxed text-pearl/70 max-w-md mx-auto">
             Every natural emerald is unique. Unlike diamonds, emeralds naturally
             contain internal characteristics known as inclusions. Tatiana
@@ -285,9 +285,9 @@ export default function QualitySlider() {
                 {/* Intro text — only on first panel */}
                 {i === 0 && (
                   <div className="mb-8 lg:mb-12">
-                    <p className="font-montserrat text-xs md:text-sm tracking-luxury uppercase text-gold mb-4">
+                    <h2 className="font-montserrat text-xs md:text-sm tracking-luxury uppercase text-gold mb-4">
                       Understanding Emerald Quality
-                    </p>
+                    </h2>
                     <p className="font-montserrat text-sm md:text-base leading-relaxed text-pearl/70 max-w-md">
                       Every natural emerald is unique. Unlike diamonds, emeralds
                       naturally contain internal characteristics known as

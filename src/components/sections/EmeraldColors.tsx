@@ -81,6 +81,7 @@ export default function EmeraldColors() {
     <section
       ref={sectionRef}
       className="relative w-full overflow-hidden bg-obsidian"
+      aria-label="Emerald Color Varieties"
     >
       {/* Content */}
       <div className="relative z-10 px-6 py-24 sm:px-10 md:px-16 lg:px-24 xl:px-32 2xl:px-40 md:py-32 lg:py-40 max-w-7xl mx-auto">

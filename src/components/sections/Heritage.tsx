@@ -318,7 +318,7 @@ export default function Heritage() {
               >
                 <Image
                   src="/assets/media/Meet_Tatiana_De_La_Torre_1.webp"
-                  alt="Tatiana De La Torre"
+                  alt="Tatiana De La Torre, founder of Emeralds by Tatiana, Colombian emerald expert based in Colorado"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover scale-110"
