@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -10,47 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Hero() {
   const containerRef = useRef<HTMLElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  // ─── iOS Safari Video Autoplay Fix ─────────────────────────────────────────
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    // Force DOM-level attributes critical for WebKit / iOS Safari autoplay policy
-    video.setAttribute('muted', '');
-    video.setAttribute('playsinline', '');
-    video.setAttribute('webkit-playsinline', 'true');
-    video.muted = true;
-    video.defaultMuted = true;
-
-    // Trigger play immediately
-    video.play().catch((err) => {
-      console.log('Autoplay blocked initially, awaiting user gesture:', err);
-    });
-
-    // Fallback: trigger playback on standard user gestures
-    const playVideo = () => {
-      video.play().catch(() => {});
-    };
-
-    const cleanUpListeners = () => {
-      window.removeEventListener('click', playVideo);
-      window.removeEventListener('touchend', playVideo);
-    };
-
-    // Clean up gesture listeners only when the video actually starts playing
-    video.addEventListener('play', cleanUpListeners);
-
-    window.addEventListener('click', playVideo);
-    window.addEventListener('touchend', playVideo);
-
-    return () => {
-      video.removeEventListener('play', cleanUpListeners);
-      window.removeEventListener('click', playVideo);
-      window.removeEventListener('touchend', playVideo);
-    };
-  }, []);
 
   useGSAP(
     () => {
@@ -111,19 +70,22 @@ export default function Hero() {
       <div
         ref={videoContainerRef}
         className="absolute inset-0"
-      >
-        <video
-          ref={videoRef}
-          className="h-full w-full object-cover"
-          src="/assets/media/hero-bg-perfect-ios.mp4"
-          poster="/assets/media/Raw emeralds with lighting on a dark background and logo of the brand.webp"
-          autoPlay
-          muted
-          loop
-          playsInline
-          aria-hidden="true"
-        />
-      </div>
+        dangerouslySetInnerHTML={{
+          __html: `
+            <video
+              class="h-full w-full object-cover"
+              src="/assets/media/hero-bg-perfect-ios.mp4"
+              poster="/assets/media/Raw%20emeralds%20with%20lighting%20on%20a%20dark%20background%20and%20logo%20of%20the%20brand.webp"
+              autoplay
+              muted
+              loop
+              playsinline
+              webkit-playsinline="true"
+              aria-hidden="true"
+            ></video>
+          `
+        }}
+      />
 
       {/* ── Dark Gradient Overlay ── */}
       <div
