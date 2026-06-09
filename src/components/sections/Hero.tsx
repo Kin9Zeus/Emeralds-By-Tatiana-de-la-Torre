@@ -74,7 +74,6 @@ export default function Hero() {
           __html: `
             <video
               class="h-full w-full object-cover"
-              src="/assets/media/hero-bg-perfect-ios.mp4"
               poster="/assets/media/Raw%20emeralds%20with%20lighting%20on%20a%20dark%20background%20and%20logo%20of%20the%20brand.webp"
               autoplay
               muted
@@ -82,7 +81,10 @@ export default function Hero() {
               playsinline
               webkit-playsinline="true"
               aria-hidden="true"
-            ></video>
+            >
+              <source src="https://res.cloudinary.com/df5ufn9ao/video/upload/v1780989293/hero-bg-perfect-ios_bsmpm9.mp4" type="video/mp4">
+              <source src="/assets/media/hero-bg-perfect-ios.mp4" type="video/mp4">
+            </video>
           `
         }}
       />
