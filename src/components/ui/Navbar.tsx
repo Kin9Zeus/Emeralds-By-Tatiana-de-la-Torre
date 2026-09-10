@@ -28,7 +28,6 @@ export default function Navbar() {
       setIsScrolled(window.scrollY > 100);
     };
 
-    // Check initial position
     handleScroll();
 
     window.addEventListener('scroll', handleScroll, { passive: true });

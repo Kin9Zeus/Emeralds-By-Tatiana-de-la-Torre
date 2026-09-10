@@ -14,7 +14,6 @@ export default function Origin() {
 
   useGSAP(
     () => {
-      // Parallax on background image
       gsap.to(imageRef.current, {
         yPercent: 20,
         ease: 'none',
@@ -26,7 +25,6 @@ export default function Origin() {
         },
       });
 
-      // Heading reveal
       gsap.from('.origin-heading', {
         y: 50,
         opacity: 0,
@@ -39,7 +37,6 @@ export default function Origin() {
         },
       });
 
-      // Body text reveal
       gsap.from('.origin-body', {
         y: 30,
         opacity: 0,
@@ -53,7 +50,6 @@ export default function Origin() {
         },
       });
 
-      // Gold divider reveal
       gsap.from('.origin-divider', {
         scaleX: 0,
         duration: 1.2,

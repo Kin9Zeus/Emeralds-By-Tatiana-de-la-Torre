@@ -13,7 +13,6 @@ export default function Hero() {
 
   useGSAP(
     () => {
-      // ─── Blur-to-Focus Text Reveal Timeline (on load) ───
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
       tl.fromTo(
@@ -40,7 +39,6 @@ export default function Hero() {
           '-=0.4'
         );
 
-      // ─── Video Parallax: scale down + fade on scroll ───
       gsap.fromTo(
         videoContainerRef.current,
         { scale: 1, opacity: 1 },

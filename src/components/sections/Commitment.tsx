@@ -23,7 +23,6 @@ export default function Commitment() {
 
   useGSAP(
     () => {
-      // Parallax effect on the background image
       gsap.to(imageRef.current, {
         yPercent: 20,
         ease: 'none',
@@ -35,7 +34,6 @@ export default function Commitment() {
         },
       });
 
-      // Heading reveal
       gsap.from('.commitment-heading', {
         y: 40,
         opacity: 0,
@@ -48,7 +46,6 @@ export default function Commitment() {
         },
       });
 
-      // Paragraph 1 reveal
       gsap.from('.commitment-para-1', {
         y: 30,
         opacity: 0,
@@ -61,7 +58,6 @@ export default function Commitment() {
         },
       });
 
-      // Criteria intro text
       gsap.from('.commitment-criteria-intro', {
         y: 30,
         opacity: 0,
@@ -74,7 +70,6 @@ export default function Commitment() {
         },
       });
 
-      // Staggered criteria list items
       gsap.from('.criterion-item', {
         x: -40,
         opacity: 0,
@@ -88,7 +83,6 @@ export default function Commitment() {
         },
       });
 
-      // Gold bullet shimmer after items appear
       gsap.fromTo(
         '.criterion-bullet',
         { scale: 0, rotate: -90 },
@@ -106,7 +100,6 @@ export default function Commitment() {
         }
       );
 
-      // Paragraph 3 reveal
       gsap.from('.commitment-para-3', {
         y: 30,
         opacity: 0,
@@ -119,7 +112,6 @@ export default function Commitment() {
         },
       });
 
-      // Gold divider line animation
       gsap.from('.commitment-divider', {
         scaleX: 0,
         duration: 1.2,

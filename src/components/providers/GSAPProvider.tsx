@@ -12,7 +12,6 @@ export default function GSAPProvider({
   children: React.ReactNode;
 }) {
   useEffect(() => {
-    // Refresh ScrollTrigger after all content loads
     const timeout = setTimeout(() => {
       ScrollTrigger.refresh();
     }, 100);

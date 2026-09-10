@@ -12,7 +12,6 @@ export default function OilTreatment() {
 
   useGSAP(
     () => {
-      // Heading reveal
       gsap.from('.oil-heading', {
         y: 40,
         opacity: 0,
@@ -25,7 +24,6 @@ export default function OilTreatment() {
         },
       });
 
-      // Body text reveal
       gsap.from('.oil-body', {
         y: 30,
         opacity: 0,
@@ -38,7 +36,6 @@ export default function OilTreatment() {
         },
       });
 
-      // Callout box reveal
       gsap.from('.oil-callout', {
         y: 40,
         opacity: 0,
@@ -51,7 +48,6 @@ export default function OilTreatment() {
         },
       });
 
-      // Gold border shimmer — animate the border opacity
       gsap.fromTo(
         '.oil-callout-border',
         { opacity: 0.4 },
@@ -67,7 +63,6 @@ export default function OilTreatment() {
         }
       );
 
-      // Gold divider
       gsap.from('.oil-divider', {
         scaleX: 0,
         duration: 1.2,

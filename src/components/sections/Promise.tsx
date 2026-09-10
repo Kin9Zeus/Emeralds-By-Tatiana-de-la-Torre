@@ -14,7 +14,6 @@ export default function Promise() {
 
   useGSAP(
     () => {
-      // Background parallax
       if (bgImageRef.current) {
         gsap.to(bgImageRef.current, {
           yPercent: 15,
@@ -28,7 +27,6 @@ export default function Promise() {
         });
       }
 
-      // Tag line
       gsap.from('.promise-tag', {
         y: 20,
         opacity: 0,
@@ -41,7 +39,6 @@ export default function Promise() {
         },
       });
 
-      // Main heading
       gsap.from('.promise-heading', {
         y: 50,
         opacity: 0,
@@ -54,7 +51,6 @@ export default function Promise() {
         },
       });
 
-      // Subheading
       gsap.from('.promise-subheading', {
         y: 30,
         opacity: 0,
@@ -67,7 +63,6 @@ export default function Promise() {
         },
       });
 
-      // Gold divider
       gsap.from('.promise-divider', {
         scaleX: 0,
         duration: 1.4,
@@ -79,7 +74,6 @@ export default function Promise() {
         },
       });
 
-      // Promise statement lines — staggered reveal
       gsap.from('.promise-line', {
         y: 40,
         opacity: 0,
@@ -94,7 +88,6 @@ export default function Promise() {
         },
       });
 
-      // CTA button
       gsap.from('.promise-cta', {
         y: 30,
         opacity: 0,

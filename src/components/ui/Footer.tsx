@@ -89,7 +89,6 @@ export default function Footer() {
   const handleSubscribe = useCallback(
     (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      // TODO: integrate with newsletter service
       setEmail('');
     },
     []

@@ -44,7 +44,6 @@ export default function Trust() {
     () => {
       /* ───── Part A: Why Clients Trust ───── */
 
-      // Section heading
       gsap.from('.trust-heading', {
         y: 50,
         opacity: 0,
@@ -57,7 +56,6 @@ export default function Trust() {
         },
       });
 
-      // Subtext
       gsap.from('.trust-subtext', {
         y: 30,
         opacity: 0,
@@ -70,7 +68,6 @@ export default function Trust() {
         },
       });
 
-      // Trust image reveal
       gsap.from('.trust-image-wrapper', {
         clipPath: 'inset(100% 0 0 0)',
         duration: 1.4,
@@ -82,7 +79,6 @@ export default function Trust() {
         },
       });
 
-      // Staggered trust bullet items
       gsap.from('.trust-bullet-item', {
         x: -40,
         opacity: 0,
@@ -96,7 +92,6 @@ export default function Trust() {
         },
       });
 
-      // Gold diamond icons pop-in
       gsap.fromTo(
         '.trust-diamond',
         { scale: 0, rotate: -90 },
@@ -114,7 +109,6 @@ export default function Trust() {
         }
       );
 
-      // Gold divider between parts
       gsap.from('.trust-divider', {
         scaleX: 0,
         duration: 1.2,
@@ -128,7 +122,6 @@ export default function Trust() {
 
       /* ───── Part B: A Message from Tatiana ───── */
 
-      // Message heading
       gsap.from('.message-heading', {
         y: 50,
         opacity: 0,
@@ -141,7 +134,6 @@ export default function Trust() {
         },
       });
 
-      // Tatiana portrait image
       gsap.from('.message-portrait', {
         scale: 0.9,
         opacity: 0,
@@ -154,7 +146,6 @@ export default function Trust() {
         },
       });
 
-      // Blockquote reveal
       gsap.from('.message-blockquote', {
         y: 40,
         opacity: 0,
@@ -167,7 +158,6 @@ export default function Trust() {
         },
       });
 
-      // Gold border animate in
       gsap.from('.blockquote-border', {
         scaleY: 0,
         transformOrigin: 'top',
@@ -180,7 +170,6 @@ export default function Trust() {
         },
       });
 
-      // Attribution
       gsap.from('.message-attribution', {
         y: 20,
         opacity: 0,
@@ -196,7 +185,6 @@ export default function Trust() {
 
       /* ───── Lifestyle Images Parallax Strip ───── */
 
-      // Horizontal scroll-driven parallax for the image strip
       if (lifestyleTrackRef.current) {
         const track = lifestyleTrackRef.current;
         const scrollWidth = track.scrollWidth - track.clientWidth;
@@ -213,7 +201,6 @@ export default function Trust() {
         });
       }
 
-      // Lifestyle images fade-in stagger
       gsap.from('.lifestyle-img', {
         opacity: 0,
         scale: 0.92,

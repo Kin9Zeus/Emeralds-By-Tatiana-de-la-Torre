@@ -70,7 +70,6 @@ function TiltCard({
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
-  // Detect touch devices to disable tilt
   useEffect(() => {
     setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
   }, []);
@@ -87,13 +86,12 @@ function TiltCard({
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
 
-      // Normalise cursor position to -1…1
       const normalX = (e.clientX - centerX) / (rect.width / 2);
       const normalY = (e.clientY - centerY) / (rect.height / 2);
 
       setTilt({
-        rotateX: -normalY * MAX_ROTATION, // tilt up/down
-        rotateY: normalX * MAX_ROTATION,  // tilt left/right
+        rotateX: -normalY * MAX_ROTATION,
+        rotateY: normalX * MAX_ROTATION,
       });
     },
     [isTouchDevice],
@@ -197,7 +195,6 @@ export default function EnhancementGrades() {
 
   useGSAP(
     () => {
-      // Heading entrance
       gsap.from('.enhancement-heading', {
         y: 50,
         opacity: 0,
@@ -210,7 +207,6 @@ export default function EnhancementGrades() {
         },
       });
 
-      // Subheading entrance
       gsap.from('.enhancement-subheading', {
         y: 30,
         opacity: 0,
@@ -224,7 +220,6 @@ export default function EnhancementGrades() {
         },
       });
 
-      // Cards staggered entrance
       gsap.from('.enhancement-card', {
         y: 80,
         opacity: 0,
@@ -238,7 +233,6 @@ export default function EnhancementGrades() {
         },
       });
 
-      // Bottom divider
       gsap.from('.enhancement-divider', {
         scaleX: 0,
         duration: 1.2,

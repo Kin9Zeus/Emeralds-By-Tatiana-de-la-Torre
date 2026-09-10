@@ -33,7 +33,6 @@ export default function EmeraldColors() {
 
   useGSAP(
     () => {
-      // Heading reveal
       gsap.from('.emerald-colors-heading', {
         y: 40,
         opacity: 0,
@@ -46,7 +45,6 @@ export default function EmeraldColors() {
         },
       });
 
-      // Staggered column reveal
       gsap.from('.color-column', {
         y: 60,
         opacity: 0,
@@ -60,7 +58,6 @@ export default function EmeraldColors() {
         },
       });
 
-      // Swatch bars grow in from the top
       gsap.from('.color-swatch', {
         scaleY: 0,
         transformOrigin: 'top center',

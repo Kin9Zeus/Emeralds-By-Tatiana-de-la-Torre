@@ -20,15 +20,12 @@ export default function SmoothScroll({
       infinite: false,
     });
 
-    // Sync Lenis scroll position to GSAP ScrollTrigger
     lenis.on("scroll", ScrollTrigger.update);
 
-    // Use GSAP ticker to drive Lenis (single RAF loop)
     gsap.ticker.add((time) => {
       lenis.raf(time * 1000);
     });
 
-    // Disable GSAP lag smoothing so Lenis controls timing
     gsap.ticker.lagSmoothing(0);
 
     return () => {

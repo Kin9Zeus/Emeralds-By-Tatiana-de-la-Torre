@@ -20,6 +20,15 @@
 .DS_Store
 *.pem
 
+# AI and Editor artifacts
+.claude/
+.cursor/
+.cline/
+.trae/
+trae.json
+.vscode/
+.idea/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
