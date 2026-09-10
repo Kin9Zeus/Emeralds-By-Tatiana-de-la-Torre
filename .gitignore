@@ -20,14 +20,14 @@
 .DS_Store
 *.pem
 
-# AI and Editor artifacts
-.claude/
+## AI and Editor artifacts
 .cursor/
 .cline/
 .trae/
 trae.json
 .vscode/
 .idea/
+.claude/
 
 # debug
 npm-debug.log*
