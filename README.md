@@ -1,75 +1,105 @@
 <div align="center">
-  <img src="public/assets/media/Centered_golden_logo_no_background.png" alt="Emeralds by Tatiana De La Torre Logo" width="300" />
-  
-  # Emeralds by Tatiana De La Torre
+
+<img src="docs/readme/hero.jpg" alt="Emeralds by Tatiana De La Torre home: the gold EMERALDS wordmark over a cut emerald, with the line 'Where Colombian Heritage Meets Timeless Luxury'" width="100%" />
+
+# Emeralds by Tatiana De La Torre
+
+**Colombian emeralds presented the way a museum would present them — dark velvet, gold type, and a scroll that teaches you how to judge a stone before it asks you to buy one.**
+
+<br/>
+
+![Next.js](https://img.shields.io/badge/Next.js_14-062117?style=for-the-badge&logo=nextdotjs&logoColor=D4AF37)
+![TypeScript](https://img.shields.io/badge/TypeScript-062117?style=for-the-badge&logo=typescript&logoColor=D4AF37)
+![GSAP](https://img.shields.io/badge/GSAP_ScrollTrigger-062117?style=for-the-badge&logo=greensock&logoColor=D4AF37)
+
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0A3B24?style=flat-square&logo=tailwindcss&logoColor=E8D48B)
+![Motion](https://img.shields.io/badge/Motion-0A3B24?style=flat-square&logo=framer&logoColor=E8D48B)
+![Lenis](https://img.shields.io/badge/Lenis_smooth_scroll-0A3B24?style=flat-square&logoColor=E8D48B)
+![Schema.org](https://img.shields.io/badge/JSON--LD-JewelryStore_·_FAQ-0A3B24?style=flat-square&logoColor=E8D48B)
+
+[Overview](#overview) · [The journey](#the-journey) · [Highlights](#highlights) · [Screenshots](#screenshots) · [Architecture](#architecture) · [Run it](#run-it)
+
 </div>
 
-Welcome to the official repository for the **Emeralds by Tatiana De La Torre** website, a premium digital platform designed to showcase and highlight the quality of Colombian emeralds.
+---
 
-This project has been developed following the highest industry standards, ensuring optimal performance, a seamless user experience, and cutting-edge visual design.
+## Overview
 
-## 💎 Key Features
+The official site of **Emeralds by Tatiana De La Torre**, a Colombian gemstone dealer who selects emeralds personally from the Muzo region. Fine emeralds are bought on trust, so the brief was not to show a catalogue: it was to make a first-time buyer feel *educated and safe* — to understand colour, transparency, cut and treatment grades — and to meet the person behind every stone.
 
-* **Premium UI/UX Design:** A sophisticated and modern user interface focused on highlighting the natural beauty of emeralds through the use of whitespace, elegant typography, and an immersive color palette.
-* **Fluid Animations (GSAP & Framer Motion):** Implementation of advanced animations powered by GSAP and Motion, including parallax effects, staggered reveals, and smooth transitions that enrich the browsing experience.
-* **Smooth Scrolling (Lenis):** Integration of Lenis for natural and smooth scrolling throughout the entire page, drastically enhancing the site's premium feel.
-* **Advanced SEO Optimization:** Dynamic metadata and structured data markup (JSON-LD) to maximize search engine visibility, ensuring excellent organic ranking.
-* **Fully Responsive:** Perfect adaptation to any device (mobile, tablet, and desktop), providing the best experience regardless of screen resolution.
-* **Exceptional Performance:** Modern architecture using Next.js App Router, with automatic optimization of static images and fonts, achieving minimal load times.
+The design borrows from the jeweller's own tools: deep emerald velvet (`#062117` → `#0A3B24`), gold leaf type in **Cinzel** over **Montserrat**, thin gold dividers, and photography lit like a vitrine.
 
-## 🛠️ Tech Stack
+## The journey
 
-The project is built using modern, efficient, and highly scalable technologies:
+| # | Section | What happens |
+|---|---|---|
+| 1 | **Hero** | The gold wordmark resolves over a cut emerald, letter-spaced like an engraving. |
+| 2 | **Meet Tatiana** | Her story, told beside her portrait, so the buyer knows who is choosing the stones. |
+| 3 | **Understanding quality** | The section pins and becomes a **horizontal scroll**: Color → Clarity → Transparency → Cut, one panel per scroll, with the exact traits Tatiana looks for. |
+| 4 | **Emerald colours & origin** | The range of greens, and where in Colombia they come from. |
+| 5 | **Enhancement grades** | F1 · F2 · F3 explained side by side, from minor to significant enhancement. |
+| 6 | **Oil treatment** | What clarity enhancement is, said plainly — "transparency regarding the treatment status of every gemstone". |
+| 7 | **Trust · Commitment · Promise** | GIA certificates, Muzo sourcing and a personal message from Tatiana. |
 
-* **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
-* **Language:** [TypeScript](https://www.typescriptlang.org/) for robust, secure, and error-free code.
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/) for agile component design and a consistent design system.
-* **Animations:** [GSAP](https://gsap.com/) and [Framer Motion](https://www.framer.com/motion/)
-* **Scroll:** [Lenis](https://lenis.studiofreight.com/)
+## Highlights
 
-## 🚀 Local Installation & Setup
+| | |
+|---|---|
+| 🎞️ **Scroll-choreographed** | GSAP ScrollTrigger runs through all ten sections — scrubbed parallax, staggered reveals and one pinned horizontal gallery whose length is computed from the viewport, so it never leaves blank space after the last panel. |
+| 🧈 **Smooth, but native underneath** | Lenis smooths the wheel while ScrollTrigger reads the real scroll position, so anchors, keyboard scrolling and accessibility tools keep working. |
+| 🔎 **Structured for search** | A connected JSON-LD graph — `JewelryStore`, `Organization`, `Person`, `Product` with an `OfferCatalog`, `WebSite` and a 6-question `FAQPage` — plus a generated `sitemap.xml` and `robots.txt`. |
+| 🖼️ **Luxury that still loads fast** | Next.js App Router with `next/image`; every photograph is shipped as WebP (22 optimised assets), and fonts come through `next/font`, which self-hosts them at build time so text never reflows. |
+| 📱 **Re-composed for phones** | The pinned horizontal gallery switches to a layout built for touch screens instead of being shrunk. |
 
-To build and run this project in a local development environment, follow these steps:
+## Screenshots
 
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd emeralds-site
-   ```
+<div align="center">
+  <img src="docs/readme/screens.jpg" alt="Four desktop sections: Meet Tatiana De La Torre, Color, Cut, and the F1–F3 enhancement grades" width="100%" />
+  <br/><sub><b>Desktop</b> — Meet Tatiana, the quality gallery (Color and Cut) and the enhancement grades.</sub>
+  <br/><br/>
+  <img src="docs/readme/mobile.jpg" alt="Two mobile screens of the site" width="60%" />
+  <br/><sub><b>Mobile</b></sub>
+</div>
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## Architecture
 
-3. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
+```
+src/
+├── app/
+│   ├── layout.tsx         metadata, fonts, providers
+│   ├── page.tsx           section order
+│   ├── sitemap.ts · robots.ts
+├── components/
+│   ├── sections/          Hero, Heritage, Origin, QualitySlider, EmeraldColors,
+│   │                      EnhancementGrades, OilTreatment, Trust, Commitment, Promise
+│   ├── providers/         GSAPProvider (plugin registration) · SmoothScroll (Lenis)
+│   ├── seo/JsonLd.tsx     the structured-data graph
+│   └── ui/                Navbar, Footer, GoldDivider
+└── lib/fonts.ts           Cinzel + Montserrat via next/font
+public/assets/media/       photography (WebP)
+```
 
-4. **View the site:**
-   Open [http://localhost:3000](http://localhost:3000) in your browser to interact with the application.
+| Token | Value |
+|---|---|
+| Emerald dark / deep / medium | `#062117` · `#0A3B24` · `#116B3E` |
+| Gold / light / muted | `#D4AF37` · `#E8D48B` · `#C4A44A` |
 
-## 📦 Production Deployment
+## Run it
 
-To build the project and prepare it for a production environment (e.g., Vercel, AWS, etc.):
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
+
+Production:
 
 ```bash
 npm run build
-npm run start
+npm run start      # honours $PORT, binds 0.0.0.0 — ready for Railway or any Node host
 ```
 
-## 📐 Project Structure
-
-The source code architecture follows modular design and scalability principles:
-
-- `/src/app`: Application routes, global SEO configuration (sitemap, robots.txt), and main styles.
-- `/src/components`: Reusable, strictly typed components organized into:
-  - `/sections`: Main visual sections of the page (Hero, Origin, Trust, etc.).
-  - `/ui`: Global graphical interface elements (Navbar, Footer, buttons).
-  - `/providers`: Context providers for animation and scroll lifecycles.
-  - `/seo`: Components for injecting structured data for web crawlers.
-- `/public`: Optimized static assets, including images, background videos, and multi-platform favicons.
-
 ---
-*Developed with strict professionalism, focused on performance and attention to detail.*
+
+<div align="center">
+<sub>Designed and engineered by <a href="https://www.devleck.com">Devleck</a> — Aleck Martinez.</sub>
+</div>
