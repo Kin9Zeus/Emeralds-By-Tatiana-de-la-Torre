@@ -11,6 +11,7 @@
 ![Next.js](https://img.shields.io/badge/Next.js_14-062117?style=for-the-badge&logo=nextdotjs&logoColor=D4AF37)
 ![TypeScript](https://img.shields.io/badge/TypeScript-062117?style=for-the-badge&logo=typescript&logoColor=D4AF37)
 ![GSAP](https://img.shields.io/badge/GSAP_ScrollTrigger-062117?style=for-the-badge&logo=greensock&logoColor=D4AF37)
+[![CI](https://github.com/Kin9Zeus/Emeralds-By-Tatiana-de-la-Torre/actions/workflows/ci.yml/badge.svg)](https://github.com/Kin9Zeus/Emeralds-By-Tatiana-de-la-Torre/actions/workflows/ci.yml)
 
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0A3B24?style=flat-square&logo=tailwindcss&logoColor=E8D48B)
 ![Motion](https://img.shields.io/badge/Motion-0A3B24?style=flat-square&logo=framer&logoColor=E8D48B)
