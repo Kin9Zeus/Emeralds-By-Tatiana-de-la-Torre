@@ -98,6 +98,10 @@ npm run build
 npm run start      # honours $PORT, binds 0.0.0.0 — ready for Railway or any Node host
 ```
 
+## License
+
+© 2026 Devleck (Aleck Martinez). **All rights reserved.** The code is published as a portfolio case study: you may read it and run it locally to evaluate it, but you may not copy, redistribute or use it in another product without written permission. Brand names, logos, photographs and texts belong to their respective owners. See [LICENSE](LICENSE) · Permissions: contact@devleck.com
+
 ---
 
 <div align="center">
